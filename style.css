@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black: #192a56;
+    --gray: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    padding: 1rem 7%;
+    display: flex; align-items: center; justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+header logo i{
+    color: var(--green);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: .5rem 1.5rem;
+    color: var(--gray);
+}
+header .navbar a.active, header .navbar a:hover{
+    color: white;
+    background: var(--green);
+}
+
+header .icons i, header .icons a{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover, header .icons a:hover{
+    color: white;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+header .icons #menuBars{
+    display: none;
+}
+
+
+
+/* search icon  */
+#searchForm{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%; width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#searchForm.active{
+    top: 0;
+}
+
+#searchForm #searchBox{
+    width: 50rem;
+    border-bottom: .1rem solid white;
+    padding: 1rem 0;
+    color: white;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+
+#searchForm #searchBox::placeholder{
+    color: #eee;
+}
+
+
+#searchForm #searchBox::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#searchForm label{
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#searchForm label:hover{
+    color: var(--green);
+}
+#searchForm #close{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    top: 2rem; right: 3rem;
+    font-size: 5rem;
+}
+
+/* common css */
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: #eee;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    background: var(--black);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem 3rem;
+}
+.btn:hover{
+    background: var(--green);
+    letter-spacing: 0.1rem;
+}
+/* home sections */
+.home .homeSlider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+.home .homeSlider .slide .content{
+    flex: 1 1 45rem;
+}
+.home .homeSlider .slide .image{
+    flex: 1 1 45rem;
+}
+.home .homeSlider .slide .image img{
+    width: 100%;
+}
+.home .homeSlider .slide .content span{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+.home .homeSlider .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+}
+.home .homeSlider .slide .content p{
+    color: var(--gray);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    header .icons #menuBars{
+        display: inline-block;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 0.1rem solid rgba(0,0,0,0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+    #searchForm #searchBox{
+        width: 90%;
+        margin: 0 1rem;
+    }
+}
+
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 50%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
