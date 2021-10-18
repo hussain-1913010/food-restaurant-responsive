@@ -201,8 +201,7 @@ section:nth-child(even){
     background: var(--green);
 }
 
-
-
+/* dishes section */
 .dishes .boxContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -276,8 +275,7 @@ section:nth-child(even){
     font-size: 2.2rem;
 }
 
-
-
+/* about section */
 .about .row{
     display: flex;
     flex-wrap: wrap;
@@ -333,9 +331,7 @@ section:nth-child(even){
     color: var(--black);
 }
 
-
-
-
+/* menu section */
 
 .menu .boxContainer{
     display: grid;
@@ -405,12 +401,11 @@ section:nth-child(even){
     font-size: 2.5rem;
 }
 
+/* review section */
 
-
-
-
-
-
+.review{
+    overflow-x: hidden !important;
+}
 .review .slide{
     padding: 2rem;
     box-shadow: var(--box-shadow);
@@ -453,10 +448,7 @@ section:nth-child(even){
 }
 
 
-
-
-
-
+/* order section */
 .order form{
     max-width: 90rem;
     border-radius: 0.5rem;
@@ -505,11 +497,7 @@ section:nth-child(even){
     margin-top: 0;
 }
 
-
-
-
-
-
+/* footer section */
 .footer .boxContainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -544,9 +532,7 @@ section:nth-child(even){
     color: var(--green);
 }
 
-
-
-
+/* loader */
 .loaderContainer{
     position: fixed;
     top: 0;
