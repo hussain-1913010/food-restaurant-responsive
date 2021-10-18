@@ -337,6 +337,79 @@ section:nth-child(even){
 
 
 
+.menu .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.menu .boxContainer .box{
+    background: white;
+    border: 0.1rem solid rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+.menu .boxContainer .box .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.menu .boxContainer .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.menu .boxContainer .box .image .fa-heart{
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: white;
+    border-radius: 50%;
+    color: var(--black);
+}
+.menu .boxContainer .box .image .fa-heart:hover{
+    background-color: var(--green);
+    color: white;
+}
+.menu .boxContainer .box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+.menu .boxContainer .box .content .stars{
+    padding-bottom: 1rem;
+}
+.menu .boxContainer .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.menu .boxContainer .box .content h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.menu .boxContainer .box .content p{
+    color: var(--gray);
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+.menu .boxContainer .box .content .price{
+    color: var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
 
 
 
