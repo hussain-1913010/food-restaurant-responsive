@@ -547,10 +547,27 @@ section:nth-child(even){
 
 
 
+.loaderContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loaderContainer img{
+    width: 35rem;
+}
 
-
-
-
+.loaderContainer.fade-out{
+    top: -110%;
+    opacity: 0;
+}
 
 
 
